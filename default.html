@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Information</title>
+    <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/default.html" class="nav-item">Homepage</a>
+        <a href="/members/21120197/21120197.html" class="nav-item">21120197</a>
+        <a href="/members/21120460/21120460.html" class="nav-item">21120460</a>
+        <a href="/members/22120097/22120097.html" class="nav-item">22120097</a>
+    </div>
+    <div class="card group-card">
+        <h2>WAD Project Group</h2>
+        <img alt="Group Photo" src="./images/group-photo.jpg" class="group-photo" usemap="#image-map" />
+        <map name="image-map">
+            <area alt="Anh Hào" title="Anh Hào" href="/members/22120097/22120097.html" coords="300, 130, 20" shape="circle">
+            <area alt="Tuấn Anh" title="Tuấn Anh" href="/members/21120197/21120197.html" coords="230, 127, 20" shape="circle">
+            <area alt="Tấn Hùng" title="Tấn Hùng" href="/members/21120460/21120460.html" coords="370, 130, 20" shape="circle">
+        </map>
+        <div class="info">
+            <h3>Members List</h3>
+            <div class="member"><b>Cao Nguyễn Tuấn Anh</b> - 21120197</div>
+            <div class="member"><b>Nguyễn Tấn Hùng</b> - 21120460</div>
+            <div class="member"><b>Nguyễn Anh Hào</b> - 22120097</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get current URL path
+            var path = window.location.pathname;
+            // Find nav items
+            var items = document.querySelectorAll('.nav-item');
+            items.forEach(function (item) {
+                if (item.getAttribute('href') === path) {
+                    item.classList.add('active'); // Add 'active' class to the current item
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

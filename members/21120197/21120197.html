@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cao Nguyễn Tuấn Anh</title>
+    <link rel="stylesheet" type="text/css" href="/default.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/default.html" class="nav-item">Homepage</a>
+        <a href="/members/21120197/21120197.html" class="nav-item">21120197</a>
+        <a href="/members/21120460/21120460.html" class="nav-item">21120460</a>
+        <a href="/members/22120097/22120097.html" class="nav-item">22120097</a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var path = window.location.pathname;
+            var items = document.querySelectorAll('.nav-item');
+            items.forEach(function (item) {
+                if (item.getAttribute('href') === path) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <div class="card id-card">
+        <img alt="avatar" src="./images/Anh Hào.jpg" class="avatar" />
+        <div>
+            <h2>Cao Nguyễn Tuấn Anh</h2>
+            <p><b>Student ID:</b> 21120197</p>
+            <p><b>Date of birth:</b> 15/01/2004</p>
+            <p><b>Email:</b> anhhao012004@gmail.com</p>
+            <p><b>Phone number:</b> 0368377883</p>
+        </div>
+    </div>
+    <a class="button" href="/default.html">Quay lại</a>
+</body>
+
+</html>
